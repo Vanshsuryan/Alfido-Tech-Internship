@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css"/>
+    <title>Responsive Navigation</title>
+</head>
+<body>
+    <nav>
+        <ul class="sidebar">
+            <li onclick=hidesidebar()><a href="#"><img src="./menu_24dp_E3E3E3_FILL0_wght400_GRAD0_opsz24.png"  height="26" viewbox="0 96  960 960 " width="26"></a></li>
+            <li><a href="#">BROTHER HOOD</a></li>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">New Arrivals</a></li>
+            <li><a href="#">Shopping</a></li>
+            <li><a href="#">Contact</a></li>
+            <li><a href="#">Login</a></li>
+        </ul>
+        <ul>
+            <li><a href="#">BROTHER HOOD</a></li>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">New Arrivals</a></li>
+            <li><a href="#">Shopping</a></li>
+            <li><a href="#">Contact</a></li>
+            <li><a href="#">Login</a></li>
+             <li onclick=showsidebar()><a href="#"><img src="./menu_24dp_E3E3E3_FILL0_wght400_GRAD0_opsz24.png"  height="26" viewbox="0 96  960 960 " width="26"/></a></li>
+            
+        </ul>
+    </nav>
+    <script>
+        function showsidebar(){
+            const sidebar=document.querySelector('.sidebar')
+            sidebar.style.display="flex"
+        }
+        function hidesidebar(){
+            const sidebar=document.querySelector('.sidebar')
+            sidebar.style.display="none"
+        }
+    </script>
+</body>
+</html>
